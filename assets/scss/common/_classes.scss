@@ -1,0 +1,25 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 350px;
+  height: 60px;
+  background-color: rgba($color-primary, 0.8);
+  border: 2px solid $color-primary;
+  padding: 0.5em 1em;
+
+  font-size: 1.125rem;
+  letter-spacing: 0.1em;
+
+  &--primary {
+
+  }
+}

@@ -10,8 +10,6 @@
   align-items: center;
   justify-content: center;
 
-  width: 350px;
-  height: 60px;
   background-color: rgba($color-primary, 0.8);
   border: 2px solid $color-primary;
   padding: 0.5em 1em;
@@ -20,6 +18,14 @@
   letter-spacing: 0.1em;
 
   &--primary {
+    min-height: 60px;
 
+    @include sm-min {
+      min-width: 350px;
+    }
+
+    @include sm {
+      min-width: 100%;
+    }
   }
 }
